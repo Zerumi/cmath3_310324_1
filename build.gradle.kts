@@ -10,6 +10,10 @@ application {
     mainClass = "io.github.Main"
 }
 
+tasks.named<JavaExec>("run") {
+    standardInput = System.`in`
+}
+
 repositories {
     mavenCentral()
 }
