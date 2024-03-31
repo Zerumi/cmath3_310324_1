@@ -5,7 +5,7 @@ class TrapezoidMethod : AbstractIntegralSolvingMethod() {
         validateN(n)
         val h = (b - a) / n
         var sum = 0.0
-        for (i in 1..<(n - 1)) {
+        for (i in 1..<n) {
             sum += f(a + i * h)
         }
         val result = h * ((f(a) + f(b)) / 2 + sum)

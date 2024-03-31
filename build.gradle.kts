@@ -1,9 +1,14 @@
 plugins {
     kotlin("jvm") version "1.9.22"
+    application
 }
 
 group = "io.github"
 version = "1.0-SNAPSHOT"
+
+application {
+    mainClass = "io.github.Main"
+}
 
 repositories {
     mavenCentral()

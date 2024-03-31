@@ -1,7 +1,7 @@
 package io.github.method
 
 abstract class AbstractRectangleMethod : AbstractIntegralSolvingMethod() {
-    fun solveIntegral(f: (Double) -> Double, n: Int, x0: Double, h: Double): Double {
+    protected fun solveIntegral(f: (Double) -> Double, n: Int, x0: Double, h: Double): Double {
         var result = 0.0
 
         for (i in 0..<n) {
